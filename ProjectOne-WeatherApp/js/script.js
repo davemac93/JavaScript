@@ -6,7 +6,7 @@ const error404 = document.querySelector(".notFound");
 
 function getWeather() {
 
-    const APIKey = '65660c1957b95da1149ecbbd5158ef65';
+    const APIKey = '';
     const city = document.getElementById('city').value;
 
     if(!city) {
@@ -80,9 +80,9 @@ function displayHourlyForecast(hourlyData) {
     console.log(typeof hourlyData)
 
     next24Hours.forEach(item => {
-        const dateTime = new Date(item.dt * 1000); // Convert timestamp to milliseconds
+        const dateTime = new Date(item.dt * 1000); 
         const hour = dateTime.getHours();
-        const temperature = Math.round(item.main.temp - 273.15); // Convert to Celsius
+        const temperature = Math.round(item.main.temp - 273.15);
         const iconCode = item.weather[0].icon;
         const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
 
