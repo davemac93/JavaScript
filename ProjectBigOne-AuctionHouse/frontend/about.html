@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <title>About</title>
+</head>
+<header>
+    <div class="navbar">
+    <div class="logo"><a href="index.html">Mac Automotive</a></div>
+    <ul class="links">
+        <li><a href="index.html" class="mainbar">Home</a></li>
+        <li><a href="about.html" class="mainbar">About</a></li>
+        <li><a href="auction" class="mainbar">Auction</a></li>
+        <li><a href="collection" class="mainbar">Collection</a></li>
+        <li><a href="sell" class="mainbar">Sell Your Car</a></li>
+    </ul>
+    <a href="./reg-log.html" class="action_btn">Get Started</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>  
+    
+    
+</header>
+<body>
+    <div class="about">
+        <div class="aboutCars" id='carOne'><img src="./img/Mercedes1.png"></div>
+        <div class="founder">
+            <h2>Mac Automotive</h2>
+            <h4>Founder</h4>
+            <h3>//</h3>
+            <h1>Dawid Maciejewski</h1>
+        </div>
+        <div class="aboutCars" id='carTwo'><img  src="./img/Mercedes3.png"></div>
+    </div>
+    <div class="scroll-down">
+        <h4>About Us</h4>
+        <a id="scrollDownButtonAbout"><i class="fa-solid fa-circle-arrow-down"></i></i></a>
+    </div>
+    <div class="about_container">
+        <h1>About Us</h1>
+        <p id="aboutP">Welcome to LuxeAuto Auctions, the ultimate destination where luxury meets performance in the world of automotive excellence. Founded in 2024 by Dawid Maciejewski, LuxeAuto stands as a premier hub for enthusiasts seeking the epitome of luxury vehicles.<br>
+
+            Our mission at LuxeAuto is simple: to provide a curated selection of the finest luxury automobiles available. From rare classics to cutting-edge supercars, every vehicle in our inventory undergoes rigorous inspection to ensure authenticity and superior quality.<br>
+            
+            What sets LuxeAuto apart is our unwavering commitment to customer satisfaction. Our team of experts is dedicated to assisting clients throughout the purchasing process, offering personalized services tailored to their unique needs.<br>
+            
+            At LuxeAuto Auctions, we invite you to explore the unparalleled world of automotive luxury. Join us on our journey and discover your dream car today.
+        </p>
+        <div class="about_post">
+            <img src="./img/WhoWeAre.jfif">
+            <h2>Who We Are</h2>
+            <p>LuxeAuto Auctions is your gateway to the most coveted luxury automobiles on the market. Our team of dedicated experts is committed to providing an unparalleled auction experience, connecting buyers and sellers worldwide with ease.</p>
+        </div>
+        <div class="about_post">
+            <img src="./img/History.png">
+            <h2>History</h2>
+            <p>Established by Dawid Maciejewski, LuxeAuto Auctions emerged from a passion for luxury automobiles and a desire to create a dynamic platform for enthusiasts. Since our inception, we've redefined the luxury automotive auction landscape, setting new standards of excellence in service and selection.</p>
+        </div>
+        <div class="about_post">
+            <img src="./img/Founder.jfif">
+            <h2>Founder: Dawid Maciejewski</h2>
+            <p>Dawid Maciejewski, the driving force behind LuxeAuto Auctions, is a visionary entrepreneur with a deep-rooted love for luxury cars. His expertise and passion have shaped LuxeAuto into the premier destination it is today, where automotive enthusiasts come together to indulge their passion for luxury automobiles.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('scrollDownButtonAbout').addEventListener('click', function() {
+        const aboutElement = document.querySelector('.about_post');
+    
+        const offset = 80; 
+
+        const targetScrollPosition = aboutElement.getBoundingClientRect().top + window.scrollY - offset;
+
+        window.scrollTo({
+            top: targetScrollPosition,
+            behavior: 'smooth'
+        });
+    });
+    </script>
+</body>
+</html>

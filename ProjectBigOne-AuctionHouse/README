@@ -1,0 +1,11 @@
+BACKEND
+
+npm install express mongoose passport passport-facebook passport-apple express-session
+npm install cors
+npm install bcrypt
+
+FRONTEND
+
+npm install -g http-server
+http-server
+npm install -g cors

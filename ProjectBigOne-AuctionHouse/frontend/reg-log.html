@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleLog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <title>Login page</title>
+</head>
+<header>
+    <div class="logo"><a href="http://localhost:5500/frontend">Mac Automotive</a></div>
+</header>
+<body>
+
+    <div class="container_sign" id="container_sign">
+        <div class="form_container sign_up">
+            <form id="registerForm" action="http://localhost:3000/user" method="POST">
+                <h1>Create Account</h1>
+                <span>Use your email for register</span>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="lastname" placeholder="Last Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <span class="register_invalid">Please fill in all fields</span>
+                <button id="registerSubmit">Sign Up</button>
+            </form>
+        </div>
+        <div class="form_container sign_in">
+            <form id="loginForm" action="http://localhost:3000/login" method="POST">
+                <h1>Sign In</h1>
+                <span>Use your email for register</span>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <span class="login_invalid">Invalid Password or Email</span>
+                <a href="#">Forget Your Passwaord</a>
+                <button id="loginSubmit">Sign In</button>
+            </form>
+        </div>
+        <div class="toggle_container">
+            <div class="toggle">
+                <div class="toggle_panel toggle_left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login"> Sign In</button>
+                </div>
+                <div class="toggle_panel toggle_right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register"> Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/scriptsSign.js"></script>
+</body>
+</html>
