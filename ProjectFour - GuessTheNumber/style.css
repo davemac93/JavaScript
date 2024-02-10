@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+h3{
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+button:hover {
+    color: black;
+    background-color: grey;
+}
+
+button:active {
+    scale: 1.2;
+}
+
+.buttons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+input {
+    display: flex;
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.container {
+    border: 1px solid black;
+    border-radius: 50px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 600px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.userContainer, .computerContainer {
+    display: grid;
+    border: 1px solid black;
+    border-radius: 50px;
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.computerContainer h2, .userContainer h2{
+    margin-bottom: 40px;
+}
+
+.computerContainer h3, .userContainer h3{
+    display: flex;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+#communicateContainer {
+    display: grid;
+    margin-bottom: 20px;
+    text-align: center; 
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px; 
+
+
+  }
+
+  #communicateContainer h3{
+    margin-top: 20px;
+ 
+  }

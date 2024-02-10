@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SmallGame</title>
+</head>
+<body>
+    <h3>Let's play, guess the number, 1 between 3</h3>
+    <div class="buttons">
+        <button id='confirmBtn' onclick='randomNumber()' type="button">Confirm</button>
+        <button id="restartBtn" onclick='restartGame()' type="button">Restart</button>
+    </div>
+    <div id="communicateContainer">
+        <input id='inputForm' type="text" placeholder="Enter number!"  min="1" max="3" maxlength="1" required>
+        <h3 id="communicate"></h3>
+    </div>
+    <div class="container">
+        <div class="userContainer">
+            <h2>User Score:</h2>
+            <h3 id="userScore">0</h3>
+        </div>
+        <div class="computerContainer">
+            <h2>Computer Score:</h2>
+            <h3 id="computerScore">0</h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
