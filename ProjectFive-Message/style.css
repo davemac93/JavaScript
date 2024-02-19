@@ -1,0 +1,122 @@
+*{
+    font-family: Inter;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.top {
+    position: relative;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.letter {
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: -6px;
+    display: inline-block;
+    transform: none;
+}
+
+.underLine {
+    border: 1px solid white;
+    width: 100%;
+    padding: 0 2px 0 2px;
+    margin-top: 5px;
+}
+
+.letter:hover {
+    cursor: pointer;
+    transform: translateY(-4px);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    row-gap: 300px;
+    text-align: center;
+    align-items: center;
+}
+
+.message h1{
+    font-size: 100px;
+    font-weight: 500;
+}
+
+.message h3{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.buttons {
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background color */
+    backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 15px;
+    column-gap: 10px;
+}
+
+.generate {
+    background-color: gray;
+    height: 60px;
+    width: 60px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+
+.change {
+    background-color: orange;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    height: 60px;
+    width: 120px;
+    border-radius: 14px;
+}
+
+.change i{
+    margin-left: 8px;
+    z-index: 4;
+    background-color: orange;
+}
+
+.change::before{
+    content: 'Generate';
+}
+
+.change:hover::before {
+    content: 'Let Start';
+}   
+
+.change:hover{
+    scale: 1.05;
+    box-shadow: 1px 1px 5px grey;
+    transition: 0.3s ease-in-out;
+}
+
+.change i:active{
+    scale: 1.00;
+    transform: rotate(90deg);
+}
+
+.generate:hover{
+    scale: 1.05;
+    transform: rotate(90deg);
+    box-shadow: 1px 1px 5px #fc894d;
+    transition: 0.3s ease-in-out;
+}
